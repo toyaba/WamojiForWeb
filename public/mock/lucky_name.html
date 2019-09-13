@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>ラッキーネーム | Wamojiya</title>
+    <link rel="stylesheet" href="common/css/tachyons.min.css">
+    <link rel="stylesheet" href="common/css/drawer.min.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lucky_name.css">
+  </head>
+  <body class="drawer drawer--top drawer--navbarTopGutter">
+    <div class="container" id="top">
+      <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+        <div class="drawer-container">
+          <div class="drawer-navbar-header"><a class="drawer-brand" href="/">Wamojiya</a>
+            <button class="drawer-toggle drawer-hamburger" type="button"><span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span></button>
+          </div>
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="sample.html" target="_blank">サンプル</a></li>
+              <li><a class="drawer-menu-item" href="howto.html" target="_blank">活用方法</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main" role="main">
+        <div class="inner">
+          <h1 class="tc">名前を入力</h1>
+          <p class="tc-l">性別を選択するとより正確に鑑定できます。</p>
+          <form action="." method="POST">
+            <ul class="list list-gender">
+              <li>
+                <label for="gender-m" onclick="">
+                  <input id="gender-m" type="radio" name="gender" value="m">男性
+                </label>
+              </li>
+              <li>
+                <label for="gender-f" onclick="">
+                  <input id="gender-f" type="radio" name="gender" value="f">女性
+                </label>
+              </li>
+              <li>
+                <label for="gender-n" onclick="">
+                  <input id="gender-n" type="radio" name="gender" value="">選択しない
+                </label>
+              </li>
+            </ul>
+            <ul class="list flex justify-center list-switch__type" id="js-switchType">
+              <li><a class="current" href="#type-name">名前</a></li>
+              <li><a href="#type-kana">カナ</a></li>
+            </ul>
+            <div class="form-group__convert" id="type-convert">
+              <div class="db" id="type-name">
+                <div class="flex justify-center">
+                  <input class="input-convert__text" type="text" name="c_name" placeholder="あなたの名前を入力してください">
+                  <input class="input-convert__type" type="hidden" name="input_type" value="type_name">
+                  <input class="btn-convert" type="submit" value="変換">
+                </div>
+              </div>
+              <div class="dn" id="type-kana">
+                <div class="flex justify-center">
+                  <input class="input-convert__text" type="text" name="c_name" placeholder="カタカナであなたの名前を入力してください">
+                  <input class="input-convert__type" type="hidden" name="input_type" value="type_kana">
+                  <input class="btn-convert" type="submit" value="変換">
+                </div>
+              </div>
+            </div>
+          </form>
+          <p class="tc"><small class="gray">※変換結果として表示される文字数は最大10文字となります</small></p>
+          <div class="error-message" id="js-showError">
+            <ul class="list-error">
+              <li>値が入力されていません</li>
+            </ul>
+          </div>
+          <div class="dn" id="js-result">
+            <h1 class="tc">Wamoji変換結果</h1>
+            <p class="tc">「<span class="result-input__value"></span>」
+              をWamojiに変換した結果
+            </p>
+            <ul class="list flex-l justify-between-l list-wamoji">
+              <li class="result-hiragana__value"><span>ひらがな</span><strong class="wf-ipaexmincho"></strong></li>
+              <li class="result-katakana__value"><span>カタカナ</span><strong class="wf-ipaexmincho"></strong></li>
+              <li class="result-kanji__value"><span>幸運な漢字</span><strong class="wf-ipaexmincho"></strong></li>
+            </ul>
+            <p class="tc"><a class="btn btn-forward" href="select_design.html">次へ</a></p>
+          </div>
+          <div class="tc"><a class="btn btn-back" href="convert_type.html">戻る</a></div>
+        </div>
+      </main>
+      <footer class="global-footer">
+        <p class="copyright tc"><small>&copy; GoGyoJapan Co.,LTD. All rights reserved.</small></p>
+      </footer>
+      <div class="loading-overlay" id="js-loadingOverlay">
+        <div class="loader"></div>
+      </div>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="common/js/jquery.easing.1.3.js"></script>
+      <script src="common/js/iscroll.js"></script>
+      <script src="common/js/drawer.min.js"></script>
+      <script src="common/js/common.js"></script>
+      <script src="js/lucky_name.js"></script>
+    </div>
+  </body>
+</html>

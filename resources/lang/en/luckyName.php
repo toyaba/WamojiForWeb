@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'title' => 'Lucky Name',
+    'main_title' => 'Enter Your Name',
+    'description' => 'If you choose gender you can have more Accurate Letters',
+    'gender_male' => 'Male',
+    'gender_female' => 'Female',
+    'gender_unanswered' => 'Do Not Select',
+    'type_name' => 'Name',
+    'type_kana' => 'Kana',
+    'placeholder_name' => 'Please Input Your Name',
+    'placeholder_kana' => 'Please Enter Your Name in Katakana',
+    'button_convert' => 'Conversion',
+    'button_back' => 'Back',
+    'button_next' => 'Next',
+    'convert_comment' => '※ The Number of Characters Displayed as the Conversion result is maximum :Length Character',
+    'alert' => 'Name is not Entered',
+    'convert_result' => 'Wamoji Conversion result',
+    'wamoji_result' => '"<span class="result-input__value"></span>" Result Converted to Wamoji',
+    'hiragana' => 'Hiragana',
+    'katakana' => 'Katakana',
+    'kanji' => 'Lucky Kanji',
+    'error_message_name' => 'Please Enter with the Alphabet.',
+    'error_message_kana' => 'Please Input in Katakana.',
+];

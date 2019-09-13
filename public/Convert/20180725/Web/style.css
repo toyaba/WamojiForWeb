@@ -1,0 +1,27 @@
+body{
+	background: #ffeeee;
+	font-size: 18pt;
+	text-align: center;
+}
+
+button{
+	width: 200px;
+	font-size: 18pt;
+}
+
+#original{
+	font-size: 32pt;
+}
+
+
+#original::-webkit-input-placeholder {
+	color: #CCC;
+}
+
+#original:-ms-input-placeholder {
+	color: #CCC;
+}
+
+#original::-moz-placeholder {
+	color: #CCC;
+}

@@ -1,0 +1,3 @@
+#JSGF V1.0;
+grammer EnglishName;
+public <name> = Alice | Mary;

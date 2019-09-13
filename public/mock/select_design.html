@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>デザイン選択 | Wamojiya</title>
+    <link rel="stylesheet" href="common/css/tachyons.min.css">
+    <link rel="stylesheet" href="common/css/drawer.min.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/select_design.css">
+  </head>
+  <body class="drawer drawer--top drawer--navbarTopGutter">
+    <div class="container" id="top">
+      <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+        <div class="drawer-container">
+          <div class="drawer-navbar-header"><a class="drawer-brand" href="/">Wamojiya</a>
+            <button class="drawer-toggle drawer-hamburger" type="button"><span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span></button>
+          </div>
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="sample.html" target="_blank">サンプル</a></li>
+              <li><a class="drawer-menu-item" href="howto.html" target="_blank">活用方法</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main" role="main">
+        <div class="inner">
+          <h1 class="tc">デザイン選択</h1>
+          <p class="tc-l">ご希望のシールデザインを選択してください</p>
+          <ul class="list flex-l flex-wrap-l justify-between-l list-design">
+            <li>
+              <label for="desing01">
+                <input id="desing01" type="radio" name="desing"><img src="img/desing01.png" alt="">
+              </label>
+            </li>
+            <li>
+              <label for="desing02">
+                <input id="desing02" type="radio" name="desing"><img src="img/desing02.png" alt="">
+              </label>
+            </li>
+            <li>
+              <label for="desing03">
+                <input id="desing03" type="radio" name="desing"><img src="img/desing03.png" alt="">
+              </label>
+            </li>
+            <li>
+              <label for="desing04">
+                <input id="desing04" type="radio" name="desing"><img src="img/desing04.png" alt="">
+              </label>
+            </li>
+            <li>
+              <label for="desing05">
+                <input id="desing05" type="radio" name="desing"><img src="img/desing05.png" alt="">
+              </label>
+            </li>
+            <li>
+              <label for="desing06">
+                <input id="desing06" type="radio" name="desing"><img src="img/desing06.png" alt="">
+              </label>
+            </li>
+          </ul>
+          <div class="btn-group cf"><a class="btn fr-l btn-forward" href="purchase.html">次へ</a><a class="btn fl-l btn-back" href="lucky_name.html">戻る</a></div>
+        </div>
+      </main>
+      <footer class="global-footer">
+        <p class="copyright tc"><small>&copy; GoGyoJapan Co.,LTD. All rights reserved.</small></p>
+      </footer>
+      <div class="loading-overlay" id="js-loadingOverlay">
+        <div class="loader"></div>
+      </div>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="common/js/jquery.easing.1.3.js"></script>
+      <script src="common/js/iscroll.js"></script>
+      <script src="common/js/drawer.min.js"></script>
+      <script src="common/js/common.js"></script>
+      <script src="js/select_design.js"></script>
+    </div>
+  </body>
+</html>

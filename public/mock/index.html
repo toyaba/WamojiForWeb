@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>ログインページ | Wamojiya</title>
+    <link rel="stylesheet" href="common/css/tachyons.min.css">
+    <link rel="stylesheet" href="common/css/drawer.min.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <main class="main" role="main">
+        <div class="inner">
+          <h1 class="tc"><img src="common/img/logo-wamojiya_main.png" alt="WAMOJIYA"></h1>
+          <form action="start.html" method="post">
+            <div class="login-form">
+              <div class="form-parts">
+                <input type="text" name="loging_user" placeholder="ユーザー名">
+              </div>
+              <div class="form-parts">
+                <input type="password" name="login_password" placeholder="パスワード">
+              </div>
+              <div class="form-parts">
+                <label for="remember_me" onclick="">
+                  <input id="remember_me" type="checkbox" name="remember_me">ログイン状態を保持
+                </label>
+              </div>
+              <div class="tc">
+                <input class="button-reset btn btn-forward" type="submit" value="ログイン">
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="global-footer">
+        <p class="copyright tc"><small>&copy; GoGyoJapan Co.,LTD. All rights reserved.</small></p>
+      </footer>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="common/js/jquery.easing.1.3.js"></script>
+      <script src="common/js/iscroll.js"></script>
+      <script src="common/js/drawer.min.js"></script>
+      <script src="common/js/common.js"></script>
+    </div>
+  </body>
+</html>

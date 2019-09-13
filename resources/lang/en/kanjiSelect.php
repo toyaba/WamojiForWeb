@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'title' => 'Select Kanji',
+    'main_title' => 'Enter Your Name',
+    'description' => 'Please cooperate with Sex selection in order to improve the Service.',
+    'gender_male' => 'Male',
+    'gender_female' => 'Female',
+    'gender_unanswered' => 'Do Not Select',
+    'type_name' => 'Name',
+    'type_kana' => 'Kana',
+    'placeholder_name' => 'Please Input Your Name',
+    'placeholder_kana' => 'Please Enter Your Name in Katakana',
+    'button_convert' => 'Conversion',
+    'button_back' => 'Back',
+    'button_next' => 'Next',
+    'convert_comment' => '※ The Number of Characters displayed as the Conversion result is Maximum :Length Character',
+    'alert' => 'Name is not Entered',
+    'convert_result' => 'Wamoji Conversion result',
+    'wamoji_result' => '"<span class="result-input__value"></span>" Result converted to Wamoji',
+    'hiragana' => 'Hiragana',
+    'katakana' => 'Katakana',
+    'kanji' => 'Kanji',
+    'select_kanji' => 'By selecting the Button and selecting the Displayed Kanji you can change Kanji to whatever combination you like.',
+    'error_message_name' => 'Please Enter with the Alphabet.',
+    'error_message_kana' => 'Please Input in Katakana.',
+];

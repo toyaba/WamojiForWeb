@@ -1,0 +1,9 @@
+/*
+ * Sawarabi Mincho (Japanese) 
+ */
+ @font-face {
+    font-family: 'IPAexMincho';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/ipaexm.ttf) format('truetype');
+  }
